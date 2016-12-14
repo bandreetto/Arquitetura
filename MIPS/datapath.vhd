@@ -46,13 +46,15 @@ architecture struct of datapath is
             y: out STD_LOGIC_VECTOR (31 downto 0));
     end component;
 
-    component flopr generic (width: integer);
+    component flopr 
+        generic (width: integer);
         port(clk, reset: in STD_LOGIC;
             d: in STD_LOGIC_VECTOR (width-1 downto 0);
             q: out STD_LOGIC_VECTOR (width-1 downto 0));
     end component;
 
-    component mux2 generic (width: integer);
+    component mux2 
+        generic (width: integer);
         port(d0, d1: in STD_LOGIC_VECTOR (width-1 downto 0);
             s: in STD_LOGIC;
             y: out STD_LOGIC_VECTOR (width-1 downto 0));
