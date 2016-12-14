@@ -11,8 +11,8 @@ architecture behave of aludec is
 
     process (aluop, funct) begin
         case aluop is
-        when "00" => alucontrol <= "010"; — — add (for 1b/sb/addi)
-        when "01" => alucontrol <= "110"; — — sub (for beq)
+            when "00" => alucontrol <= "010"; — — add (for 1b/sb/addi)
+            when "01" => alucontrol <= "110"; — — sub (for beq)
         when others => case funct is — — R-type instructions
             when "100000" => alucontrol <=
             "010"; — — add
