@@ -8,5 +8,5 @@ end;
 
 architecture behave of adder is
     begin
-        y  a  b;
+        y  a + b;
 end;

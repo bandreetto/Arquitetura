@@ -7,5 +7,5 @@ end;
 
 architecture behave of sl2 is
     begin
-        y  a(29 downto 0) & "00";
+        y <= a(29 downto 0) & "00";
 end;

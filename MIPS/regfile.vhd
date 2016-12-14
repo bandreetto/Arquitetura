@@ -21,19 +21,18 @@ architecture behave of regfile is
 
         process(clk) begin
             if clk'event and clk  '1' then
-                if we3  '1' then mem(CONV_INTEGER(wa3))  wd3;
+                if we3 = '1' then mem(CONV_INTEGER(wa3)) <= wd3;
                 end if;
             end if;
         end process;
 
         process (ra1, ra2) begin
-            if (conv_integer (ra1)  0) then rd1  X"00000000";
+            if (conv_integer (ra1)  0) then rd1 <= X"00000000";
                 — — register 0 holds 0
-            else rd1  mem(CONV_INTEGER (ra1));
+            else rd1 <= mem(CONV_INTEGER (ra1));
             end if;
-            
-            if (conv_integer(ra2)  0) then rd2  X"00000000";
-            else rd2  mem(CONV_INTEGER(ra2));
+            if (conv_integer(ra2)  0) then rd2 <= X"00000000";
+            else rd2 <= mem(CONV_INTEGER(ra2));
             end if;
     end process;
 end;
