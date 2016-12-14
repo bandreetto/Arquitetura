@@ -1,4 +1,5 @@
 library IEEE; use IEEE.STD_LOGIC_1164.all;
+
 entity mips is — — single cycle MIPS processor
 	port (clk, reset: in STD_LOGIC;
 		pc: out STD_LOGIC_VECTOR (31 downto 0);
