@@ -1,9 +1,16 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../sha_driver.cpp in debug mode
-   Compiling ../../../../Arq-2-SHA/sha.cpp in debug mode
    Compiling ../../../../Arq-2-SHA/sha_sysc.cpp in debug mode
-   Generating csim.exe
-error opening input_large.asc for reading
-INFO: [SIM 1] CSim done with 0 errors.
+../../../../Arq-2-SHA/sha_sysc.cpp: In function 'void sha_update(SHA_INFO*, BYTE*, int)':
+../../../../Arq-2-SHA/sha_sysc.cpp:211:31: error: no matching function for call to 'sha_system_c::sha_system_c(const char [10])'
+../../../../Arq-2-SHA/sha_sysc.cpp:211:31: note: candidates are:
+../../../../Arq-2-SHA/sha_sysc.cpp:29:1: note: sha_system_c::sha_system_c()
+../../../../Arq-2-SHA/sha_sysc.cpp:29:1: note:   candidate expects 0 arguments, 1 provided
+../../../../Arq-2-SHA/sha_sysc.cpp:29:1: note: sha_system_c::sha_system_c(const sha_system_c&)
+../../../../Arq-2-SHA/sha_sysc.cpp:29:1: note:   no known conversion for argument 1 from 'const char [10]' to 'const sha_system_c&'
+../../../../Arq-2-SHA/sha_sysc.cpp:212:26: error: incompatible types in assignment of 'LONG [5] {aka long unsigned int [5]}' to 'sc_core::sc_in<long unsigned int> [5]'
+../../../../Arq-2-SHA/sha_sysc.cpp:213:24: error: incompatible types in assignment of 'LONG [16] {aka long unsigned int [16]}' to 'sc_core::sc_in<long unsigned int> [16]'
+../../../../Arq-2-SHA/sha_sysc.cpp:215:26: error: incompatible types in assignment of 'sc_core::sc_out<long unsigned int> [5]' to 'LONG [5] {aka long unsigned int [5]}'
+make: *** [obj/sha_sysc.o] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************

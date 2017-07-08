@@ -1,50 +1,50 @@
-INFO: [HLS 200-0] Workspace C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1 opened at Sat Jul 08 17:21:17 -0300 2017
+INFO: [HLS 200-0] Workspace C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1 opened at Sat Jul 08 17:35:33 -0300 2017
 INFO: [HLS 200-100] Execute     config_clock -quiet -name default -period 2 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
-INFO: [HLS 200-100] Command     config_clock returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command     config_clock returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     open_platform DefaultPlatform 
 INFO: [HLS 200-100] Command     open_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     import_lib C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/kintexuplus 
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx.lib 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/xilinx_interface.lib 
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/plb46.lib 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/fsl.lib 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/axi4.lib 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/maxi.lib 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/saxilite.lib 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Command         ap_source returned 0; 0.005 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/dsp48.lib 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/dds_compiler.lib 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/xfft.lib 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/xfir.lib 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.014 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.015 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_old.lib 
 INFO: [HLS 200-100] Command       ap_source returned 0; 0.002 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_vivado.lib 
 INFO: [HLS 200-100] Command       ap_source returned 0; 0.002 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx.hlp 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/target_info.tcl 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/maxi.hlp 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/saxilite.hlp 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.003 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/dsp48.hlp 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.011 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/dsp48e2.hlp 
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute       get_default_platform 
 INFO: [HLS 200-100] Command       get_default_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute       config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}    {FF 548160} {DSP48E 2520}  {BRAM 1824}    {URAM 0}  
@@ -53,17 +53,17 @@ INFO: [HLS 200-100] Execute       config_chip_info -quiet -speed medium
 INFO: [HLS 200-100] Command       config_chip_info returned 0; 0 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx.hlp 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/target_info.tcl 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.003 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/maxi.hlp 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/saxilite.hlp 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/saxilite.hlp 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/dsp48.hlp 
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.008 sec.
-INFO: [HLS 200-100] Command     import_lib returned 0; 0.052 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command     import_lib returned 0; 0.055 sec.
 INFO: [HLS 200-100] Execute     source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/kintexuplus.gen 
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/virtex.gen 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx.gen 
@@ -78,7 +78,7 @@ INFO: [HLS 200-100] Execute             source C:/Xilinx/Vivado_HLS/2017.2/commo
 INFO: [HLS 200-100] Command             ap_source returned 0; 0.007 sec.
 INFO: [HLS 200-100] Execute             source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/maxi.gen 
 INFO: [HLS 200-100] Command             ap_source returned 0; 0.015 sec.
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.024 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.025 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.02 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
@@ -88,75 +88,75 @@ INFO: [HLS 200-100] Command           ap_source returned 0; 0.007 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/util.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/xfft.gen 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.243 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.169 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/ip/xfir.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.327 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.253 sec.
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/dsp48.gen 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.332 sec.
-INFO: [HLS 200-100] Command     ap_source returned 0; 0.334 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.258 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.259 sec.
 INFO: [HLS 200-100] Execute     open_platform DefaultPlatform 
 INFO: [HLS 200-100] Command     open_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     import_lib C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/kintexuplus_fpv7 
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_fpv7.lib 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_hp.lib 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0.002 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.009 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.006 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_fpv.hlp 
 INFO: [HLS 200-100] Execute         source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx.hlp 
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/target_info.tcl 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.024 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 INFO: [HLS 200-100] Execute             source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/maxi.hlp 
-INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command             ap_source returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute             source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/interface/saxilite.hlp 
 INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.002 sec.
 INFO: [HLS 200-100] Execute           source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/dsp48.hlp 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.002 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.031 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.033 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.012 sec.
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/kintexuplus_hp.hlp 
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.004 sec.
-INFO: [HLS 200-100] Command     import_lib returned 0; 0.066 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.003 sec.
+INFO: [HLS 200-100] Command     import_lib returned 0; 0.039 sec.
 INFO: [HLS 200-100] Execute     source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
 INFO: [HLS 200-100] Execute       source C:/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO: [HLS 200-100] Command       ap_source returned 0; 0.003 sec.
-INFO: [HLS 200-100] Command     ap_source returned 0; 0.004 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.003 sec.
 INFO: [HLS 200-100] Execute     set_part xcku5p-ffvb676-2-e 
 INFO: [HLS 200-100] Execute       add_library xilinx/kintexuplus/kintexuplus:xcku5p:-ffvb676:-2-e 
 INFO: [HLS 200-100] Execute         get_default_platform 
 INFO: [HLS 200-100] Command         get_default_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         license_isbetapart xcku5p 
-INFO: [HLS 200-100] Command         license_isbetapart returned 1; 0.022 sec.
+INFO: [HLS 200-100] Command         license_isbetapart returned 1; 0.021 sec.
 INFO: [HLS 200-100] Execute         get_default_platform 
 INFO: [HLS 200-100] Command         get_default_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         config_chip_info -quiet -resource  {SLICE 27120} {LUT 216960}    {FF 433920} {DSP48E 1824}  {BRAM 960}    {URAM 64}  
 INFO: [HLS 200-100] Command         config_chip_info returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         config_chip_info -quiet -speed medium 
 INFO: [HLS 200-100] Command         config_chip_info returned 0; 0 sec.
-INFO: [HLS 200-100] Command       add_library returned 0; 0.074 sec.
+INFO: [HLS 200-100] Command       add_library returned 0; 0.034 sec.
 INFO: [HLS 200-100] Execute       add_library xilinx/kintexuplus/kintexuplus_fpv7 
 INFO: [HLS 200-100] Execute         get_default_platform 
 INFO: [HLS 200-100] Command         get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-100] Command       add_library returned 0; 0.004 sec.
+INFO: [HLS 200-100] Command       add_library returned 0; 0.01 sec.
 INFO: [HLS 200-10] Setting target device to 'xcku5p-ffvb676-2-e'
 INFO: [HLS 200-100] Execute       get_default_platform 
 INFO: [HLS 200-100] Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-100] Command     set_part returned 0; 0.204 sec.
+INFO: [HLS 200-100] Command     set_part returned 0; 0.155 sec.
 INFO: [HLS 200-100] Execute     get_default_platform 
 INFO: [HLS 200-100] Command     get_default_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     config_chip_info -quiet -resource  {SLICE 27120} {LUT 216960}    {FF 433920} {DSP48E 1824}  {BRAM 960}    {URAM 64}  
 INFO: [HLS 200-100] Command     config_chip_info returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     config_chip_info -quiet -speed medium 
 INFO: [HLS 200-100] Command     config_chip_info returned 0; 0 sec.
-INFO: [HLS 200-100] Command   open_solution returned 0; 0.71 sec.
+INFO: [HLS 200-100] Command   open_solution returned 0; 0.581 sec.
 INFO: [HLS 200-100] Execute   csim_design -argv input_large.asc > output_large.txt -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [HLS 200-100] Execute     source csim/.lst_opt.tcl 
-INFO: [HLS 200-100] Command     ap_source returned 0; 0.006 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.007 sec.
 INFO: [HLS 200-100] Execute     is_encrypted C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_driver.cpp 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_xip C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_driver.cpp 
@@ -164,7 +164,7 @@ INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_encrypted C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha.cpp 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_xip C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
+INFO: [HLS 200-100] Command     is_xip returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute     is_encrypted C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha.h 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_xip C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha.h 
@@ -172,16 +172,25 @@ INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_encrypted C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha_sysc.cpp 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_xip C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha_sysc.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
+INFO: [HLS 200-100] Command     is_xip returned 0; 0.001 sec.
 INFO: [HLS 200-100] Execute     is_encrypted C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha_sysc.h 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_xip C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha_sysc.h 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     source run_sim.tcl 
-INFO: [HLS 200-100] Command     ap_source returned 0; 1.003 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [HLS 200-100] Command     is_xip returned 0; 0.001 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-100] Command   csim_design returned 0; 16.582 sec.
-INFO: [HLS 200-100] Command ap_source returned 0; 17.335 sec.
+INFO: [HLS 200-100] Command   csim_design returned 2; 7.079 sec.
+INFO: [HLS 200-100] Command ap_source returned 1; 7.677 sec.
+4
+    while executing
+"source C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/csim.tcl"
+    invoked from within
+"hls::main C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
 INFO: [HLS 200-100] Execute cleanup_all 
-INFO: [HLS 200-100] Command cleanup_all returned 0; 0.001 sec.
+INFO: [HLS 200-100] Command cleanup_all returned 0; 0 sec.
