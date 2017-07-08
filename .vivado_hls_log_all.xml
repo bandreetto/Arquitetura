@@ -9,6 +9,7 @@
       <mgLog/>
       <packageLog/>
       <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T19:05:01.656-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:44:16.545-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:40:54.992-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:39:47.657-0300"/>

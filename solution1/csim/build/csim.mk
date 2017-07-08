@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../sha_driver.cpp ../../../../Arq-2-SHA/sha.cpp ../../../../Arq-2-SHA/sha_sysc.cpp
+HLS_SOURCES = ../../../sha_driver.cpp ../../../sha_sysc.cpp
 
 TARGET := csim.exe
 
@@ -79,14 +79,8 @@ $(ObjDir)/sha_driver.o: ../../../sha_driver.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/sha_driver.d
 
-$(ObjDir)/sha.o: ../../../../Arq-2-SHA/sha.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../Arq-2-SHA/sha.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/sha.d
-
-$(ObjDir)/sha_sysc.o: ../../../../Arq-2-SHA/sha_sysc.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../Arq-2-SHA/sha_sysc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/sha_sysc.o: ../../../sha_sysc.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../sha_sysc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/sha_sysc.d
