@@ -29,12 +29,17 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/.apc/.src</location>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/.apc/.tb</location>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/.apc/.tb</location>
+		</link>
+		<link>
+			<name>solution1/constraints</name>
+			<type>2</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/sha.cpp</name>
@@ -59,7 +64,22 @@
 		<link>
 			<name>testbench/sha_driver.cpp</name>
 			<type>1</type>
-			<location>C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/sha_driver.cpp</location>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_driver.cpp</location>
+		</link>
+		<link>
+			<name>solution1/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/solution1.directive</location>
+		</link>
+		<link>
+			<name>solution1/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution1/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
