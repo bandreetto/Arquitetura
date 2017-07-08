@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../sha_driver.cpp in debug mode
+   Compiling ../../../sha.cpp in debug mode
+   Compiling ../../../sha_sysc.cpp in debug mode
+   Generating csim.exe
+error opening input_large.asc for reading
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
