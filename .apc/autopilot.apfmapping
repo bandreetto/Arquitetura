@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="sha.cpp" path="C:\Users\Giovanni\VivadoHLS\Arq-2-SHA\sha.cpp"/>
-    <originFiles name="sha.h" path="C:\Users\Giovanni\VivadoHLS\Arq-2-SHA\sha.h"/>
-    <originFiles name="sha_sysc.cpp" path="C:\Users\Giovanni\VivadoHLS\Arq-2-SHA\sha_sysc.cpp"/>
-    <originFiles name="sha_sysc.h" path="C:\Users\Giovanni\VivadoHLS\Arq-2-SHA\sha_sysc.h"/>
+    <originFiles name="sha.cpp" path="C:\Users\Giovanni\VivadoHLS\sha.cpp"/>
+    <originFiles name="sha.h" path="C:\Users\Giovanni\VivadoHLS\sha.h"/>
+    <originFiles name="sha_sysc.cpp" path="C:\Users\Giovanni\VivadoHLS\sha_sysc.cpp"/>
+    <originFiles name="sha_sysc.h" path="C:\Users\Giovanni\VivadoHLS\sha_sysc.h"/>
   </source>
   <testbench>
     <originFiles name="sha_driver.cpp" path="C:\Users\Giovanni\VivadoHLS\Arquitetura\sha_driver.cpp"/>
