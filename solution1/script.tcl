@@ -6,9 +6,9 @@
 open_project Arquitetura
 set_top sha_init
 add_files sha.cpp
-add_files sha.h
-add_files sha_sysc.cpp
-add_files sha_sysc.h
+add_files Arquitetura/sha.h
+add_files Arquitetura/sha_sysc.cpp
+add_files Arquitetura/sha_sysc.h
 add_files -tb Arquitetura/sha_driver.cpp
 open_solution "solution1"
 set_part {xcku5p-ffvb676-2-e}

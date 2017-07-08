@@ -42,6 +42,26 @@
 			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/sha.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha.cpp</location>
+		</link>
+		<link>
+			<name>source/sha.h</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha.h</location>
+		</link>
+		<link>
+			<name>source/sha_sysc.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_sysc.cpp</location>
+		</link>
+		<link>
+			<name>source/sha_sysc.h</name>
+			<type>1</type>
+			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_sysc.h</location>
+		</link>
+		<link>
 			<name>testbench/sha_driver.cpp</name>
 			<type>1</type>
 			<location>C:/Users/Giovanni/VivadoHLS/Arquitetura/sha_driver.cpp</location>

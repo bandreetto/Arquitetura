@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="com.autoesl.autopilot.project" name="Arquitetura" top="sha_init">
   <files>
-    <file name="sha.cpp" sc="0" tb="false" cflags=""/>
-    <file name="sha.h" sc="0" tb="false" cflags=""/>
-    <file name="sha_sysc.cpp" sc="0" tb="false" cflags=""/>
-    <file name="sha_sysc.h" sc="0" tb="false" cflags=""/>
     <file name="../sha_driver.cpp" sc="0" tb="1" cflags=""/>
+    <file name="sha.cpp" sc="0" tb="false" cflags=""/>
+    <file name="Arquitetura/sha.h" sc="0" tb="false" cflags=""/>
+    <file name="Arquitetura/sha_sysc.cpp" sc="0" tb="false" cflags=""/>
+    <file name="Arquitetura/sha_sysc.h" sc="0" tb="false" cflags=""/>
   </files>
   <solutions>
     <solution name="solution1" status="active"/>
