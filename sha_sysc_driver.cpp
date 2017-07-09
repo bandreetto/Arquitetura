@@ -28,7 +28,8 @@ int sc_main(int argc, char* argv[])
 
 	//Associating signals to ports
 	sha_systemc coprocessor("COPROCESSOR");
-	coprocessor.exec(exec);
+	coprocessor.exec_transform(exec);
+	coprocessor.exec_byte_reverse(exec);
 	coprocessor.counter(counter);
 	for(int i = 0; i < 16; i++) {
 		coprocessor.data[i](data[i]);

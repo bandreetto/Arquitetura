@@ -3,7 +3,8 @@
 
 SC_MODULE (sha_systemc) {
 
-	sc_in<bool> exec;
+	sc_in<bool> exec_transform;
+	sc_in<bool> exec_byte_reverse;
 
 	//Transform
 	sc_in<LONG> digest[5];
@@ -18,7 +19,7 @@ SC_MODULE (sha_systemc) {
 	sc_out<LONG> buffer_out[16];
 
 	void transform() {
-		if (exec.read()) {
+		if (exec_transform.read()) {
 			int i;
 			LONG temp, A, B, C, D, E, W[80];
 
@@ -73,7 +74,7 @@ SC_MODULE (sha_systemc) {
 
 //#ifdef LITTLE_ENDIAN
 	void byte_reverse() {
-		if (exec.read()) {
+		if (exec_byte_reverse.read()) {
 			int i, count;
 			BYTE ct[4], *cp;
 			LONG *data = (LONG *) malloc(sizeof(LONG) * 16);
@@ -102,8 +103,100 @@ SC_MODULE (sha_systemc) {
 
 	SC_CTOR(sha_systemc) {
 		SC_METHOD(transform);
-			sensitive << exec;
+			sensitive << exec_transform;
 		SC_METHOD(byte_reverse);
+			sensitive << exec_byte_reverse;
+	}
+};
+
+SC_MODULE (sha_systemc_update) {
+
+	sc_in<bool> exec;
+
+	//Seed Data
+	sc_in<LONG> count_lo;
+	sc_in<LONG> count_hi;
+	sc_in<LONG> digest[5];
+	sc_in<int> counter;
+
+	//Data Itself
+	sc_in<LONG> data[16];
+	sc_out<LONG> data_out[16];
+
+	sha_systemc func;
+
+	void update() {
+		if (exec.read()) {
+			int clo = count_lo.read();
+			int chi = count_hi.read();
+			int count = counter.read();
+
+			/* ESSE TRECHO DE CÓDIGO ESTÁ ERRADO
+			 * MOTIVO: MÒDULOS RECEBEM SIGNALS, E NÃO VARS
+			 */
+
+			LONG *data_var = (LONG *) malloc(sizeof(LONG) * 16);
+			LONG *buffer_var = (LONG *) malloc(sizeof(LONG) * 16);
+			LONG *digest_var = (LONG *) malloc(sizeof(LONG) * 5);
+//
+//			for (int i = 0; i < 16; i++) {
+//				func.buffer[i](buffer_var[i]);
+//				func.buffer_out[i](buffer_var[i]);
+//				func.data[i](data_var[i]);
+//			}
+//			for (int i = 0; i < 5; i++) {
+//				digest_var[i] = digest[i].read();
+//				func.digest[i](digest_var[i]);
+//				func.digest_out[i](digest_var[i]);
+//			}
+//			func.counter(count);
+//			func.exec_byte_reverse(exec);
+//			func.exec_transform(exec);
+
+			/* FIM DO TRECHO DE CÓDIGO ERRADO */
+
+			for (int i = 0; i < 16; i++) data_var[i] = data[i].read();
+			if ((clo + ((LONG) count << 3)) < clo) ++chi;
+			clo += (LONG) count << 3;
+			chi += (LONG) count >> 29;
+
+			while (count >= SHA_BLOCKSIZE) {
+				memcpy(data_var, buffer_var, SHA_BLOCKSIZE);
+//#ifdef LITTLE_ENDIAN
+				func.byte_reverse();
+//#endif /* LITTLE_ENDIAN */
+				func.transform();
+//				transform();
+				buffer_var += SHA_BLOCKSIZE;
+				count -= SHA_BLOCKSIZE;
+			}
+			memcpy(data_var, buffer_var, count);
+			for(int i = 0; i < 16; i++)
+				data_out[i].write(data_var[i]);
+		}
+	}
+
+	SC_CTOR(sha_systemc_update) : func("FUNC"){
+		SC_METHOD(update);
 			sensitive << exec;
 	}
 };
+
+//void sha_update(SHA_INFO *sha_info, BYTE *buffer, int count)
+//{
+//    if ((sha_info->count_lo + ((LONG) count << 3)) < sha_info->count_lo) {
+//	++sha_info->count_hi;
+//    }
+//    sha_info->count_lo += (LONG) count << 3;
+//    sha_info->count_hi += (LONG) count >> 29;
+//    while (count >= SHA_BLOCKSIZE) {
+//	memcpy(sha_info->data, buffer, SHA_BLOCKSIZE);
+//#ifdef LITTLE_ENDIAN
+//	byte_reverse(sha_info->data, SHA_BLOCKSIZE);
+//#endif /* LITTLE_ENDIAN */
+//	sha_transform(sha_info);
+//	buffer += SHA_BLOCKSIZE;
+//	count -= SHA_BLOCKSIZE;
+//    }
+//    memcpy(sha_info->data, buffer, count);
+//}
