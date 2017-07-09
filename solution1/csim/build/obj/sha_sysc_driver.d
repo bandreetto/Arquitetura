@@ -1,4 +1,4 @@
-obj/sha_sysc.o: ../../../sha_sysc.cpp \
+obj/sha_sysc_driver.o: ../../../sha_sysc_driver.cpp \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/systemc.h \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/systemc \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/sysc/kernel/sc_cmnhdr.h \
@@ -114,4 +114,4 @@ obj/sha_sysc.o: ../../../sha_sysc.cpp \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/sysc/packages/boost/config/platform/win32.hpp \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/sysc/packages/boost/config/suffix.hpp \
  C:/Xilinx/Vivado_HLS/2017.2/win64/tools/systemc/include/sysc/packages/boost/utility/enable_if.hpp \
- ../../../sha_sysc.h
+ ../../../sha_sysc.cpp ../../../sha_sysc.h

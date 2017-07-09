@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../sha_driver.cpp ../../../sha_sysc.cpp
+HLS_SOURCES = ../../../sha_sysc_driver.cpp ../../../sha_sysc.cpp
 
 TARGET := csim.exe
 
@@ -73,11 +73,11 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/sha_driver.o: ../../../sha_driver.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../sha_driver.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/sha_sysc_driver.o: ../../../sha_sysc_driver.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../sha_sysc_driver.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/sha_driver.d
+-include $(ObjDir)/sha_sysc_driver.d
 
 $(ObjDir)/sha_sysc.o: ../../../sha_sysc.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../sha_sysc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

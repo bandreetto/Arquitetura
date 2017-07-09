@@ -61,7 +61,6 @@ SC_MODULE (sha_transform) {
 
 	SC_CTOR(sha_transform) {
 		SC_METHOD(transform);
-		sensitive << digest << data;
 	}
 };
 
@@ -97,6 +96,5 @@ SC_MODULE (sha_byte_reverse) {
 
 	SC_CTOR(sha_byte_reverse) {
 		SC_METHOD(byte_reverse);
-		sensitive << buffer << counter;
 	}
 };

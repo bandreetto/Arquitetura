@@ -2,40 +2,19 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog>
-        <logs message="ERROR: [HLS 200-70] Compilation errors found:&#xD;&#xA;Pragma processor failed: In file included from Arq-2-SHA/sha_sysc.c:6:&#xD;&#xA;In file included from C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc\systemc.h:1:&#xD;&#xA;C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc/ap_systemc.h:6:2: error: C++ is required to include this header file&#xD;&#xA;#error C++ is required to include this header file&#xD;&#xA; ^&#xD;&#xA;C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc/ap_systemc.h:14:10: fatal error: 'iostream' file not found&#xD;&#xA;#include &lt;iostream>&#xD;&#xA;         ^&#xD;&#xA;2 errors generated.&#xD;&#xA;Failed checking during preprocessing.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/Giovanni/VivadoHLS/Arq-2-SHA/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T14:59:29.501-0300"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T19:05:01.656-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:44:16.545-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:40:54.992-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:39:47.657-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:37:47.678-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T17:35:41.366-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:52:49.669-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:26:10.062-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:25:30.403-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:23:07.149-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:22:30.071-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:21:55.137-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:19:36.549-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:18:32.242-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:16:45.687-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:15:58.104-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:01:52.177-0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:00:11.534-0300"/>
-        <logs message="ERROR: [HLS 200-101] Message ID '1-1' value invalid for uint argument.&#xD;&#xA;&#xD;&#xA;FORMAT&#xD;&#xA;  ap_puts_err [OPTIONS] [ Message namespace] [ Message ID] [ Message string]&#xD;&#xA;      &lt;string>&#xD;&#xA;      &lt;uint>&#xD;&#xA;      &lt;string>&#xD;&#xA;&#xD;&#xA;g++.exe: error: obj/sha_sysc.o: No such file or directory&#xD;&#xA;make: *** [csim.exe] Error 1" projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T15:00:11.520-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T22:31:34.279-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Arquitetura" solutionName="solution1" date="2017-07-08T22:27:57.190-0300"/>
       </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [HLS 200-40] In file included from Arq-2-SHA/sha_sysc.c:6:&#xD;&#xA;In file included from C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc\systemc.h:1:&#xD;&#xA;C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc/ap_systemc.h:6:2: error: C++ is required to include this header file&#xD;&#xA;#error C++ is required to include this header file&#xD;&#xA; ^&#xD;&#xA;C:/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/ap_sysc/ap_systemc.h:14:10: fatal error: 'iostream' file not found&#xD;&#xA;#include &lt;iostream>&#xD;&#xA;         ^&#xD;&#xA;2 errors generated." projectName="Arq-2-SHA" solutionName="solution1" date="2017-07-08T14:59:29.360-0300" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>
