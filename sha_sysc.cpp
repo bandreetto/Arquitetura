@@ -26,6 +26,7 @@ SC_MODULE (sha_transform) {
 		C = digest[2].read();
 		D = digest[3].read();
 		E = digest[4].read();
+
 #ifdef UNROLL_LOOPS
 		FUNC(1, 0); FUNC(1, 1); FUNC(1, 2); FUNC(1, 3); FUNC(1, 4);
 		FUNC(1, 5); FUNC(1, 6); FUNC(1, 7); FUNC(1, 8); FUNC(1, 9);

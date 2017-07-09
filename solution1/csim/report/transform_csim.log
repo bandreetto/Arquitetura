@@ -1,8 +1,10 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../sha_sysc_driver.cpp in debug mode
+   Compiling ../../../sha_sysc.cpp in debug mode
    Generating csim.exe
-TESTE DE CODIFO
-DATA: 721011081081113287111114108100330000
+TESTE DE CODIGO
+DADOS: 0000000000000000
+00000
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************
